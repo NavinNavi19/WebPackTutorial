@@ -1,0 +1,17 @@
+{
+  "name": "webPackTutorialColtSteele",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebPack Tutorial by Colt Steele",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Navin",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
