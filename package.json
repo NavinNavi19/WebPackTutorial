@@ -4,7 +4,9 @@
   "private": true,
   "description": "WebPack Tutorial by Colt Steele",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
   "keywords": [
     "webpack"
   ],
