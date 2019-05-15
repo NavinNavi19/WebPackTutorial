@@ -6,10 +6,6 @@ module.exports = {
   // devtool none to see the exact code without any shorthand and in an order
   // devtool: "none",
   entry: "./src/index.js",
-  output: {
-    filename: "main.[contentHash].js",
-    path: path.resolve(__dirname + "/dist")
-  },
   plugins: [new HtmlWebpackPlugin({ template: "./src/template.html" })],
   module: {
     rules: [
