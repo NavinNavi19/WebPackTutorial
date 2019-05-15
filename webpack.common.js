@@ -2,7 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   // devtool none to see the exact code without any shorthand and in an order
   // devtool: "none",
   entry: "./src/index.js",
@@ -16,6 +15,20 @@ module.exports = {
         //Style Loader loads that CSS JS into the DOM.
         //Should be arranged in a reverse order.
         use: ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.html$/,
+        use: ["html-loader"]
+      },
+      {
+        test: /\.(svg|png|jpg|gif|jpeg)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "imgs"
+          }
+        }
       }
     ]
   }
