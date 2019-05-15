@@ -1,4 +1,5 @@
 import { run } from "./app/app";
+import "./style.css";
 import { AlertService } from "./app/alert.service";
 import { ComponentService } from "./app/component.service";
 
